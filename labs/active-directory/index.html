@@ -16,19 +16,19 @@
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Zakaria JAOURAGH | Portfolio Technique</title>
+        <title>Lab 1 - Active Directory & GPO - Zakaria JAOURAGH | Portfolio Technique</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#lab-1-fondations-dinfrastructure-active-directory-dns-dhcp" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="/." title="Zakaria JAOURAGH | Portfolio Technique" class="md-header__button md-logo" aria-label="Zakaria JAOURAGH | Portfolio Technique" data-md-component="logo">
+    <a href="../.." title="Zakaria JAOURAGH | Portfolio Technique" class="md-header__button md-logo" aria-label="Zakaria JAOURAGH | Portfolio Technique" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -103,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Lab 1 - Active Directory & GPO
             
           </span>
         </div>
@@ -193,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Zakaria JAOURAGH | Portfolio Technique" class="md-nav__button md-logo" aria-label="Zakaria JAOURAGH | Portfolio Technique" data-md-component="logo">
+    <a href="../.." title="Zakaria JAOURAGH | Portfolio Technique" class="md-nav__button md-logo" aria-label="Zakaria JAOURAGH | Portfolio Technique" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -211,7 +216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/index.md" class="md-nav__link">
+      <a href="../../index.md" class="md-nav__link">
         
   
   
@@ -235,18 +240,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -267,7 +274,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -282,10 +289,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/labs/active-directory/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 1 - Active Directory & GPO
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -301,6 +335,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-reseau-du-socle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture Réseau du Socle
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -330,6 +395,27 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-reseau-du-socle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture Réseau du Socle
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -342,8 +428,86 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="lab-1-fondations-dinfrastructure-active-directory-dns-dhcp">Lab 1 : Fondations d'Infrastructure — Active Directory, DNS &amp; DHCP</h1>
+<blockquote>
+<p><strong>Avertissement méthodologique :</strong> Ce laboratoire documente la mise en place du socle système élémentaire. Il s'agit des fondations techniques nécessaires (serveur d'identité, résolution de noms, distribution d'adresses et poste client managé) destinées à accueillir les architectures avancées (durcissement GPO, scripts d'automatisation PowerShell, pare-feu pfSense et supervision ITSM).</p>
+</blockquote>
+<hr />
+<h2 id="1-architecture-reseau-du-socle">1. Architecture Réseau du Socle</h2>
+<p>L'ensemble des machines virtuelles est isolé au sein d'un réseau privé étanche (<em>Host-Only</em>) sans accès direct au réseau domestique :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nœud</th>
+<th style="text-align: left;">Système d'Exploitation</th>
+<th style="text-align: left;">Nom FQDN</th>
+<th style="text-align: left;">Rôle principal</th>
+<th style="text-align: left;">Adressage IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Contrôleur de Domaine</strong></td>
+<td style="text-align: left;">Windows Server 2022 Datacenter</td>
+<td style="text-align: left;"><code>SRV-DC01.lab.lan</code></td>
+<td style="text-align: left;">AD DS, DNS Autoritaire, Serveur DHCP</td>
+<td style="text-align: left;"><code>10.0.10.10/24</code> (Fixe)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Poste de Travail Client</strong></td>
+<td style="text-align: left;">Windows 11 Enterprise LTSC</td>
+<td style="text-align: left;"><code>CLI01.lab.lan</code></td>
+<td style="text-align: left;">Client d'entreprise joint au domaine</td>
+<td style="text-align: left;"><code>10.0.10.100/24</code> (Bail DHCP)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Passerelle Virtuelle</strong></td>
+<td style="text-align: left;">Pare-feu (Futur pfSense)</td>
+<td style="text-align: left;"><code>FW01.lab.lan</code></td>
+<td style="text-align: left;">Passerelle de routage &amp; filtrage</td>
+<td style="text-align: left;"><code>10.0.10.1/24</code></td>
+</tr>
+</tbody>
+</table>
+<p>```mermaid
+graph TD
+    subgraph HYPERVISEUR [Environnement Virtualisé VMware - PC Hôte 32 Go RAM]
+        subgraph VIRTUAL_NET [Commutateur Virtuel Isolé : Segment 10.0.10.0/24]</p>
+<pre><code>        subgraph SERVEUR [SRV-DC01 - Contrôleur de Domaine 2022]
+            AD[Active Directory Domain Services - Kerberos/LDAP]
+            DNS[Serveur DNS Autoritaire - Zones Directe &amp; Inverse]
+            DHCP[Serveur DHCP d'Entreprise - Baux 10.0.10.100 à 200]
+            OU[5 Unités d'Organisation d'Entreprise]
+        end
+
+        subgraph CLIENT [CLI01 - Poste Client Windows 11 LTSC]
+            SESSION[Sessions Gérées : lab\Administrator &amp; lab\zjaouragh]
+        end
+
+        CLIENT --&gt;|1. Résolution DNS Directe / Inverse| DNS
+        CLIENT --&gt;|2. Authentification Ticket Kerberos TGT| AD
+        CLIENT --&gt;|3. Enregistrement dynamique ntds.dit| OU
+        DHCP -.-&gt;|4. Attribution automatique bail IP 10.0.10.100| CLIENT
+    end
+end
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -380,10 +544,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": [], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
