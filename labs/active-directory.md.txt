@@ -1,0 +1,38 @@
+# 🏢 Lab 1 : Fondations d'Infrastructure — Active Directory, DNS & DHCP
+
+> **Avertissement méthodologique :** Ce laboratoire documente la mise en place du socle système élémentaire. Il s'agit des fondations techniques nécessaires (serveur d'identité, résolution de noms, distribution d'adresses et poste client managé) destinées à accueillir les architectures avancées (durcissement GPO, scripts d'automatisation PowerShell, pare-feu pfSense et supervision ITSM).
+
+---
+
+## 📐 1. Architecture Réseau du Socle
+
+L'ensemble des machines virtuelles est isolé au sein d'un réseau privé étanche (*Host-Only*) sans accès direct au réseau domestique :
+
+| Nœud | Système d'Exploitation | Nom FQDN | Rôle principal | Adressage IP |
+| :--- | :--- | :--- | :--- | :--- |
+| **Contrôleur de Domaine** | Windows Server 2022 Datacenter | `SRV-DC01.lab.lan` | AD DS, DNS Autoritaire, Serveur DHCP | `10.0.10.10/24` (Fixe) |
+| **Poste de Travail Client** | Windows 11 Enterprise LTSC | `CLI01.lab.lan` | Client d'entreprise joint au domaine | `10.0.10.100/24` (Bail DHCP) |
+| **Passerelle Virtuelle** | Pare-feu (Futur pfSense) | `FW01.lab.lan` | Passerelle de routage & filtrage | `10.0.10.1/24` |
+
+```mermaid
+graph TD
+    subgraph HYPERVISEUR [Environnement Virtualisé VMware - PC Hôte 32 Go RAM]
+        subgraph VIRTUAL_NET [Commutateur Virtuel Isolé : Segment 10.0.10.0/24]
+            
+            subgraph SERVEUR [SRV-DC01 - Contrôleur de Domaine 2022]
+                AD[Active Directory Domain Services - Kerberos/LDAP]
+                DNS[Serveur DNS Autoritaire - Zones Directe & Inverse]
+                DHCP[Serveur DHCP d'Entreprise - Baux 10.0.10.100 à 200]
+                OU[5 Unités d'Organisation d'Entreprise]
+            end
+
+            subgraph CLIENT [CLI01 - Poste Client Windows 11 LTSC]
+                SESSION[Sessions Gérées : lab\Administrator & lab\zjaouragh]
+            end
+
+            CLIENT -->|1. Résolution DNS Directe / Inverse| DNS
+            CLIENT -->|2. Authentification Ticket Kerberos TGT| AD
+            CLIENT -->|3. Enregistrement dynamique ntds.dit| OU
+            DHCP -.->|4. Attribution automatique bail IP 10.0.10.100| CLIENT
+        end
+    end
