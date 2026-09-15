@@ -1,10 +1,10 @@
-# 🏢 Lab 1 : Fondations d'Infrastructure — Active Directory, DNS & DHCP
+# Lab 1 : Fondations d'Infrastructure — Active Directory, DNS & DHCP
 
 > **Avertissement méthodologique :** Ce laboratoire documente la mise en place du socle système élémentaire. Il s'agit des fondations techniques nécessaires (serveur d'identité, résolution de noms, distribution d'adresses et poste client managé) destinées à accueillir les architectures avancées (durcissement GPO, scripts d'automatisation PowerShell, pare-feu pfSense et supervision ITSM).
 
 ---
 
-## 📐 1. Architecture Réseau du Socle
+## 1. Architecture Réseau du Socle
 
 L'ensemble des machines virtuelles est isolé au sein d'un réseau privé étanche (*Host-Only*) sans accès direct au réseau domestique :
 
