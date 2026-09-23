@@ -706,18 +706,18 @@
 <p>Une Stratégie de Groupe de niveau domaine a été créée pour éteindre ce protocole :</p>
 <p><img alt="Configuration de la GPO Anti-LLMNR" src="../images/p2_screen1_creation_gpo.png" /></p>
 <p>Activation du paramètre système « Turn off multicast name resolution » :</p>
-<p><img alt="Activation du paramètre d'extinction LLMNR" src="../images/p2_screen2_gpo_llmnr_enabled.png" /></p>
+<p><img alt="Activation du paramètre d'extinction LLMNR" src="../../images/p2_screen2_gpo_llmnr_enabled.png" /></p>
 <h3 id="validation-dans-la-base-de-registre-du-client-windows-11">Validation dans la base de registre du client Windows 11 :</h3>
 <p>Vérification par requête directe dans la ruche de registre système locale (<code>HKLM</code>) confirmant la prise en compte de la politique de sécurité avec la valeur <code>0</code> :</p>
-<p><img alt="Preuve d'inactivation dans le Registre Windows" src="../images/p2_screen3_preuve_registre_llmnr.png" /></p>
+<p><img alt="Preuve d'inactivation dans le Registre Windows" src="../../images/p2_screen3_preuve_registre_llmnr.png" /></p>
 <hr />
 <h2 id="2-securite-physique-conformite-rgpd-verrouillage-automatique">2. Sécurité Physique &amp; Conformité RGPD : Verrouillage Automatique</h2>
 <p>Afin de lutter contre les accès physiques non autorisés lors de l'abandon de poste, une politique d'ouverture de session interactive impose le verrouillage automatique de l'écran après 600 secondes (10 minutes) d'inactivité clavier/souris :</p>
-<p><img alt="GPO de verrouillage de session à 10 minutes" src="../images/p2_screen4_gpo_session_lock.png" /></p>
+<p><img alt="GPO de verrouillage de session à 10 minutes" src="../../images/p2_screen4_gpo_session_lock.png" /></p>
 <hr />
 <h2 id="3-defense-en-profondeur-verrouillage-du-pare-feu-windows-defender">3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender</h2>
 <p>Pour interdire toute neutralisation locale du pare-feu par des utilisateurs non avertis, une GPO centralisée force l'activation continue du pare-feu avec fonctions avancées de sécurité sur l'intégralité des profils (Domaine, Privé, Public) :</p>
-<p><img alt="Pare-feu Windows Defender forcé sur tous les profils" src="../images/p2_screen5_gpo_firewall_on.png" /></p>
+<p><img alt="Pare-feu Windows Defender forcé sur tous les profils" src="../../images/p2_screen5_gpo_firewall_on.png" /></p>
 <hr />
 <h2 id="4-automatisation-industrielle-provisionnement-massif-via-powershell">4. Automatisation Industrielle : Provisionnement Massif via PowerShell</h2>
 <p>Pour éliminer les tâches chronophages et les erreurs de saisie lors des arrivées massives de collaborateurs, un script PowerShell modulaire a été développé pour intégrer 30 employés à partir d'un fichier d'extraction RH (<code>utilisateurs.csv</code>).</p>
@@ -739,18 +739,18 @@
 <p>Forçage du renouvellement de mot de passe lors de la première connexion.</p>
 </li>
 </ul>
-<p><img alt="Exécution réussie du script d'import massif PowerShell" src="../images/p2_screen6_script_powershell_succes.png" /></p>
+<p><img alt="Exécution réussie du script d'import massif PowerShell" src="../../images/p2_screen6_script_powershell_succes.png" /></p>
 <h3 id="controle-de-conformite-dans-lannuaire-active-directory">Contrôle de conformité dans l'annuaire Active Directory :</h3>
 <p>Les comptes sont créés et compartimentés instantanément dans leurs services respectifs :</p>
-<p><img alt="Comptes utilisateurs créés dans l'OU Commercial" src="../images/p2_screen7_ad_users_crees.png" /></p>
+<p><img alt="Comptes utilisateurs créés dans l'OU Commercial" src="../../images/p2_screen7_ad_users_crees.png" /></p>
 <hr />
 <h2 id="5-deploiement-cible-de-ressources-reseau-gpo-preferences">5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)</h2>
 <p>Un partage sécurisé <code>SRV-DC01Partage_RH</code> a été créé avec des droits d'accès restreints aux seuls membres du service RH (permissions de Modification, exclusion du Contrôle Total pour les utilisateurs standards).</p>
 <p>Grâce aux <strong>Group Policy Preferences (GPP)</strong>, le lecteur réseau <code>Z:</code> est monté automatiquement à l'ouverture de session des seuls collaborateurs de l'OU RH :</p>
-<p><img alt="Configuration du Mappage de Lecteur Réseau Z" src="../images/p2_screen8_gpo_lecteur_z.png" /></p>
+<p><img alt="Configuration du Mappage de Lecteur Réseau Z" src="../../images/p2_screen8_gpo_lecteur_z.png" /></p>
 <h3 id="validation-en-session-utilisateur-sur-windows-11-enterprise">Validation en session utilisateur sur Windows 11 Enterprise :</h3>
 <p>Connexion avec le compte de domaine <code>adupont</code> (Alice Dupont) et constat de la présence du lecteur réseau partagé opérationnel :</p>
-<p><img alt="Lecteur réseau Z monté sur le poste client Windows 11" src="../images/p2_screen9_lecteur_z_client.png" /></p>
+<p><img alt="Lecteur réseau Z monté sur le poste client Windows 11" src="../../images/p2_screen9_lecteur_z_client.png" /></p>
 <hr />
 <h3 id="bilan-operationnel-du-projet-2">Bilan Opérationnel du Projet 2 :</h3>
 <p>Ce laboratoire valide la transition vers l'administration d'infrastructure moderne : l'annuaire est durci contre les attaques réseau par rebond, l'administration est automatisée sans intervention manuelle et le déploiement des ressources est dynamique et cloisonné.</p>
