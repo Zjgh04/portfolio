@@ -11,10 +11,8 @@
       
       
       
-        <link rel="prev" href="../active-directory/">
+        <link rel="prev" href="../securite-powershell/">
       
-      
-        <link rel="next" href="../pfsense/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Lab 2 - Durcissement GPO & PowerShell - Zakaria JAOURAGH | Portfolio Technique</title>
+        <title>Lab 3 - Pare-feu pfSense & VLANs - Zakaria JAOURAGH | Portfolio Technique</title>
       
     
     
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-2-durcissement-active-directory-gpo-anssi-automatisation-powershell" class="md-skip">
+        <a href="#lab-3-securite-perimetrique-segmentation-reseau-pfsense-27" class="md-skip">
           Aller au contenu
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 2 - Durcissement GPO & PowerShell
+              Lab 3 - Pare-feu pfSense & VLANs
             
           </span>
         </div>
@@ -321,6 +319,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../securite-powershell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 2 - Durcissement GPO & PowerShell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -340,7 +366,7 @@
   <span class="md-ellipsis">
     
   
-    Lab 2 - Durcissement GPO & PowerShell
+    Lab 3 - Pare-feu pfSense & VLANs
   
 
     
@@ -358,7 +384,7 @@
   <span class="md-ellipsis">
     
   
-    Lab 2 - Durcissement GPO & PowerShell
+    Lab 3 - Pare-feu pfSense & VLANs
   
 
     
@@ -384,122 +410,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-durcissement-reseau-desactivation-du-protocole-llmnr-anti-poisoning" class="md-nav__link">
+  <a href="#1-topologie-reseau-configuration-des-interfaces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)
+        1. Topologie Réseau &amp; Configuration des Interfaces
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-segmentation-logique-par-vlans-norme-ieee-8021q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Segmentation Logique par VLANs (Norme IEEE 802.1Q)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-matrice-de-filtrage-pare-feu-politique-zero-trust" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Matrice de Filtrage Pare-Feu (Politique Zero Trust)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-audit-analyse-des-journaux-de-blocage-system-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Audit &amp; Analyse des Journaux de Blocage (System Logs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Audit &amp; Analyse des Journaux de Blocage (System Logs)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#validation-dans-la-base-de-registre-du-client-windows-11" class="md-nav__link">
+  <a href="#bilan-operationnel-du-projet-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Validation dans la base de registre du client Windows 11 :
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-securite-physique-conformite-rgpd-verrouillage-automatique" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Sécurité Physique &amp; Conformité RGPD : Verrouillage Automatique
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-defense-en-profondeur-verrouillage-du-pare-feu-windows-defender" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-automatisation-industrielle-provisionnement-massif-via-powershell" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Automatisation Industrielle : Provisionnement Massif via PowerShell
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Automatisation Industrielle : Provisionnement Massif via PowerShell">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fonctionnalites-du-script-dingenierie" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Fonctionnalités du script d'ingénierie :
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#controle-de-conformite-dans-lannuaire-active-directory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contrôle de conformité dans l'annuaire Active Directory :
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-deploiement-cible-de-ressources-reseau-gpo-preferences" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#validation-en-session-utilisateur-sur-windows-11-enterprise" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation en session utilisateur sur Windows 11 Enterprise :
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bilan-operationnel-du-projet-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bilan Opérationnel du Projet 2 :
+        Bilan Opérationnel du Projet 3 :
       
     </span>
   </a>
@@ -515,34 +474,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pfsense/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Lab 3 - Pare-feu pfSense & VLANs
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -582,122 +513,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-durcissement-reseau-desactivation-du-protocole-llmnr-anti-poisoning" class="md-nav__link">
+  <a href="#1-topologie-reseau-configuration-des-interfaces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)
+        1. Topologie Réseau &amp; Configuration des Interfaces
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-segmentation-logique-par-vlans-norme-ieee-8021q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Segmentation Logique par VLANs (Norme IEEE 802.1Q)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-matrice-de-filtrage-pare-feu-politique-zero-trust" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Matrice de Filtrage Pare-Feu (Politique Zero Trust)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-audit-analyse-des-journaux-de-blocage-system-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Audit &amp; Analyse des Journaux de Blocage (System Logs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Audit &amp; Analyse des Journaux de Blocage (System Logs)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#validation-dans-la-base-de-registre-du-client-windows-11" class="md-nav__link">
+  <a href="#bilan-operationnel-du-projet-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Validation dans la base de registre du client Windows 11 :
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-securite-physique-conformite-rgpd-verrouillage-automatique" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Sécurité Physique &amp; Conformité RGPD : Verrouillage Automatique
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-defense-en-profondeur-verrouillage-du-pare-feu-windows-defender" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-automatisation-industrielle-provisionnement-massif-via-powershell" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Automatisation Industrielle : Provisionnement Massif via PowerShell
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Automatisation Industrielle : Provisionnement Massif via PowerShell">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fonctionnalites-du-script-dingenierie" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Fonctionnalités du script d'ingénierie :
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#controle-de-conformite-dans-lannuaire-active-directory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contrôle de conformité dans l'annuaire Active Directory :
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-deploiement-cible-de-ressources-reseau-gpo-preferences" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#validation-en-session-utilisateur-sur-windows-11-enterprise" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation en session utilisateur sur Windows 11 Enterprise :
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bilan-operationnel-du-projet-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bilan Opérationnel du Projet 2 :
+        Bilan Opérationnel du Projet 3 :
       
     </span>
   </a>
@@ -726,64 +590,77 @@
 
 
 
-<h1 id="lab-2-durcissement-active-directory-gpo-anssi-automatisation-powershell">Lab 2 : Durcissement Active Directory (GPO ANSSI) &amp; Automatisation PowerShell</h1>
+<h1 id="lab-3-securite-perimetrique-segmentation-reseau-pfsense-27">Lab 3 : Sécurité Périmétrique &amp; Segmentation Réseau (pfSense 2.7)</h1>
 <blockquote>
-<p><strong>Objectif d'ingénierie :</strong> Ce laboratoire documente la sécurisation avancée d'une infrastructure Active Directory sous Windows Server 2022 contre les attaques réseau courantes (Man-in-the-Middle, vol de hash NTLM), l'application de règles d'hygiène informatique (RGPD / Pare-feu), le provisionnement massif d'utilisateurs par script PowerShell et le déploiement ciblé de ressources partagées par GPO Preferences.</p>
+<p><strong>Objectif d'ingénierie :</strong> Ce laboratoire documente l'insertion d'un pare-feu/routeur d'entreprise <strong>pfSense Community Edition 2.7.2</strong> au sein de l'infrastructure virtuelle afin d'assurer le routage inter-VLANs, le cloisonnement des zones de sécurité (Serveurs vs Utilisateurs) et l'application d'une matrice de filtrage <em>Zero Trust</em> auditée par les journaux système.</p>
 </blockquote>
 <hr />
-<h2 id="1-durcissement-reseau-desactivation-du-protocole-llmnr-anti-poisoning">1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)</h2>
-<p>Par défaut, les systèmes Windows diffusent des requêtes en clair via le protocole LLMNR en cas d'échec de résolution DNS locale. Un attaquant présent sur le segment réseau peut écouter et empoisonner ces requêtes (via des outils tels que <em>Responder</em>) pour capturer des hashs NetNTLMv2.</p>
-<p>Une Stratégie de Groupe de niveau domaine a été créée pour éteindre ce protocole :</p>
-<p><img alt="Configuration de la GPO Anti-LLMNR" src="../../images/p2_screen1_creation_gpo.png" /></p>
-<p>Activation du paramètre système « Turn off multicast name resolution » :</p>
-<p><img alt="Activation du paramètre d'extinction LLMNR" src="../../images/p2_screen2_gpo_llmnr_enabled.png" /></p>
-<h3 id="validation-dans-la-base-de-registre-du-client-windows-11">Validation dans la base de registre du client Windows 11 :</h3>
-<p>Vérification par requête directe dans la ruche de registre système locale (<code>HKLM</code>) confirmant la prise en compte de la politique de sécurité avec la valeur <code>0</code> :</p>
-<p><img alt="Preuve d'inactivation dans le Registre Windows" src="../../images/p2_screen3_preuve_registre_llmnr.png" /></p>
+<h2 id="1-topologie-reseau-configuration-des-interfaces">1. Topologie Réseau &amp; Configuration des Interfaces</h2>
+<p>Le pare-feu assure la séparation physique et logique entre le réseau externe (WAN relié à la passerelle) et les sous-réseaux internes isolés :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Interface</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Nom Assigné</th>
+<th style="text-align: left;">Réseau / Masque</th>
+<th style="text-align: left;">Rôle opérationnel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>em0</code></strong></td>
+<td style="text-align: left;">Physique</td>
+<td style="text-align: left;"><strong>WAN</strong></td>
+<td style="text-align: left;"><code>192.168.1.185/24</code> (DHCP)</td>
+<td style="text-align: left;">Accès Internet externe et passerelle amont</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>em1</code></strong></td>
+<td style="text-align: left;">Physique</td>
+<td style="text-align: left;"><strong>SERVEURS</strong></td>
+<td style="text-align: left;"><code>10.0.10.1/24</code> (Statique)</td>
+<td style="text-align: left;">Passerelle du réseau contrôleur AD (<code>SRV-DC01</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>em1.20</code></strong></td>
+<td style="text-align: left;">VLAN 802.1Q</td>
+<td style="text-align: left;"><strong>USERS</strong></td>
+<td style="text-align: left;"><code>10.0.20.1/24</code> (Statique)</td>
+<td style="text-align: left;">Passerelle étanche des postes collaborateurs</td>
+</tr>
+</tbody>
+</table>
+<p>Configuration validée en console système FreeBSD :</p>
+<p><img alt="Configuration des adresses IP en console pfSense" src="../images/p3_screen1_pfsense_console_ip.png" /></p>
+<p>Supervision de l'état des interfaces sur le Dashboard pfSense :</p>
+<p><img alt="Dashboard officiel pfSense avec statuts d'interfaces" src="../images/p3_screen2_pfsense_dashboard.png" /></p>
 <hr />
-<h2 id="2-securite-physique-conformite-rgpd-verrouillage-automatique">2. Sécurité Physique &amp; Conformité RGPD : Verrouillage Automatique</h2>
-<p>Afin de lutter contre les accès physiques non autorisés lors de l'abandon de poste, une politique d'ouverture de session interactive impose le verrouillage automatique de l'écran après 600 secondes (10 minutes) d'inactivité clavier/souris :</p>
-<p><img alt="GPO de verrouillage de session à 10 minutes" src="../../images/p2_screen4_gpo_session_lock.png" /></p>
-<hr />
-<h2 id="3-defense-en-profondeur-verrouillage-du-pare-feu-windows-defender">3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender</h2>
-<p>Pour interdire toute neutralisation locale du pare-feu par des utilisateurs non avertis, une GPO centralisée force l'activation continue du pare-feu avec fonctions avancées de sécurité sur l'intégralité des profils (Domaine, Privé, Public) :</p>
-<p><img alt="Pare-feu Windows Defender forcé sur tous les profils" src="../../images/p2_screen5_gpo_firewall_on.png" /></p>
-<hr />
-<h2 id="4-automatisation-industrielle-provisionnement-massif-via-powershell">4. Automatisation Industrielle : Provisionnement Massif via PowerShell</h2>
-<p>Pour éliminer les tâches chronophages et les erreurs de saisie lors des arrivées massives de collaborateurs, un script PowerShell modulaire a été développé pour intégrer 30 employés à partir d'un fichier d'extraction RH (<code>utilisateurs.csv</code>).</p>
-<h3 id="fonctionnalites-du-script-dingenierie">Fonctionnalités du script d'ingénierie :</h3>
+<h2 id="2-segmentation-logique-par-vlans-norme-ieee-8021q">2. Segmentation Logique par VLANs (Norme IEEE 802.1Q)</h2>
+<p>Pour isoler les serveurs critiques des machines clientes et prévenir les déplacements latéraux d'éventuels attaquants, des étiquettes VLAN (<em>Tags 802.1Q</em>) ont été définies sur l'interface parentale <code>em1</code> :</p>
 <ul>
-<li>
-<p>Parsing dynamique du fichier CSV.</p>
-</li>
-<li>
-<p>Génération automatisée du login normalisé (<code>initiale-prenom + nom</code>).</p>
-</li>
-<li>
-<p>Chiffrement en mémoire du mot de passe via objet sécurisé <code>.NET</code> (<code>ConvertTo-SecureString</code>).</p>
-</li>
-<li>
-<p>Affectation dynamique dans l'Unité d'Organisation cible (<code>RH</code>, <code>Commercial</code>, <code>IT_Admin</code>).</p>
-</li>
-<li>
-<p>Forçage du renouvellement de mot de passe lors de la première connexion.</p>
-</li>
+<li><strong>VLAN 10 :</strong> Zone dédiée aux contrôleurs de domaine et services centraux.</li>
+<li><strong>VLAN 20 :</strong> Zone réservée aux postes utilisateurs et terminaux nomades.</li>
 </ul>
-<p><img alt="Exécution réussie du script d'import massif PowerShell" src="../../images/p2_screen6_script_powershell_succes.png" /></p>
-<h3 id="controle-de-conformite-dans-lannuaire-active-directory">Contrôle de conformité dans l'annuaire Active Directory :</h3>
-<p>Les comptes sont créés et compartimentés instantanément dans leurs services respectifs :</p>
-<p><img alt="Comptes utilisateurs créés dans l'OU Commercial" src="../../images/p2_screen7_ad_users_crees.png" /></p>
+<p><img alt="Création et tagging des VLANs 10 et 20" src="../images/p3_screen3_vlans_crees.png" /></p>
+<p>Assignation définitive des interfaces virtuelles routables :</p>
+<p><img alt="Tableau d'assignation des interfaces WAN, SERVEURS et USERS" src="../images/p3_screen4_interfaces_assignees.png" /></p>
 <hr />
-<h2 id="5-deploiement-cible-de-ressources-reseau-gpo-preferences">5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)</h2>
-<p>Un partage sécurisé <code>SRV-DC01Partage_RH</code> a été créé avec des droits d'accès restreints aux seuls membres du service RH (permissions de Modification, exclusion du Contrôle Total pour les utilisateurs standards).</p>
-<p>Grâce aux <strong>Group Policy Preferences (GPP)</strong>, le lecteur réseau <code>Z:</code> est monté automatiquement à l'ouverture de session des seuls collaborateurs de l'OU RH :</p>
-<p><img alt="Configuration du Mappage de Lecteur Réseau Z" src="../../images/p2_screen8_gpo_lecteur_z.png" /></p>
-<h3 id="validation-en-session-utilisateur-sur-windows-11-enterprise">Validation en session utilisateur sur Windows 11 Enterprise :</h3>
-<p>Connexion avec le compte de domaine <code>adupont</code> (Alice Dupont) et constat de la présence du lecteur réseau partagé opérationnel :</p>
-<p><img alt="Lecteur réseau Z monté sur le poste client Windows 11" src="../../images/p2_screen9_lecteur_z_client.png" /></p>
+<h2 id="3-matrice-de-filtrage-pare-feu-politique-zero-trust">3. Matrice de Filtrage Pare-Feu (Politique Zero Trust)</h2>
+<p>Par défaut, tout trafic non explicitement autorisé est rejeté (<em>Implicit Deny</em>). Une matrice de filtrage d'entreprise a été implémentée sur les interfaces internes :</p>
+<ol>
+<li><strong>Flux DNS &amp; Résolution de Noms :</strong> Autorisation exclusive des flux UDP/TCP sur le port <strong>53</strong> vers le serveur DNS d'entreprise <code>10.0.10.10</code>.</li>
+<li><strong>Flux d'Authentification Active Directory :</strong> Autorisation du protocole <strong>Kerberos (Port 88)</strong> et <strong>LDAP (Port 389)</strong>.</li>
+<li><strong>Flux Web :</strong> Autorisation des protocoles <strong>HTTP (80)</strong> et <strong>HTTPS (443)</strong> vers la passerelle WAN.</li>
+</ol>
+<p><img alt="Matrice des règles de sécurité de filtrage" src="../images/p3_screen5_regles_firewall_users.png" /></p>
 <hr />
-<h3 id="bilan-operationnel-du-projet-2">Bilan Opérationnel du Projet 2 :</h3>
-<p>Ce laboratoire valide la transition vers l'administration d'infrastructure moderne : l'annuaire est durci contre les attaques réseau par rebond, l'administration est automatisée sans intervention manuelle et le déploiement des ressources est dynamique et cloisonné.</p>
+<h2 id="4-audit-analyse-des-journaux-de-blocage-system-logs">4. Audit &amp; Analyse des Journaux de Blocage (System Logs)</h2>
+<p>Le moteur de filtrage à états (<em>Stateful Packet Inspection</em>) inspecte chaque en-tête de paquet IP. Les tentatives de scan de ports non sollicitées et les paquets non conformes sont immédiatement neutralisés et consignés dans les journaux de sécurité en temps réel :</p>
+<p><img alt="Journaux de filtrage pfSense affichant les rejets de paquets" src="../images/p3_screen6_logs_firewall_bloques.png" /></p>
+<hr />
+<h3 id="bilan-operationnel-du-projet-3">Bilan Opérationnel du Projet 3 :</h3>
+<p>Ce déploiement valide la capacité à architecturer un réseau d'entreprise compartimenté : la passerelle pfSense garantit la rupture protocolaire, les flux inter-VLANs sont régulés par des règles d'inspection d'état strictes et la traçabilité des accès est assurée par l'audit continu des journaux de sécurité.</p>
 
 
 
