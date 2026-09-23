@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#lab-2-durcissement-active-directory-gpo-anssi-automatisation-powershell" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -323,6 +328,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 2 - Durcissement GPO & PowerShell
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -340,6 +365,153 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-durcissement-reseau-desactivation-du-protocole-llmnr-anti-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validation-dans-la-base-de-registre-du-client-windows-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation dans la base de registre du client Windows 11 :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-securite-physique-conformite-rgpd-verrouillage-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sécurité Physique &amp; Conformité RGPD : Verrouillage Automatique
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-defense-en-profondeur-verrouillage-du-pare-feu-windows-defender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-automatisation-industrielle-provisionnement-massif-via-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Automatisation Industrielle : Provisionnement Massif via PowerShell
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Automatisation Industrielle : Provisionnement Massif via PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnalites-du-script-dingenierie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnalités du script d'ingénierie :
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-de-conformite-dans-lannuaire-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrôle de conformité dans l'annuaire Active Directory :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-deploiement-cible-de-ressources-reseau-gpo-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validation-en-session-utilisateur-sur-windows-11-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation en session utilisateur sur Windows 11 Enterprise :
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilan-operationnel-du-projet-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bilan Opérationnel du Projet 2 :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -370,6 +542,144 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-durcissement-reseau-desactivation-du-protocole-llmnr-anti-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validation-dans-la-base-de-registre-du-client-windows-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation dans la base de registre du client Windows 11 :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-securite-physique-conformite-rgpd-verrouillage-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Sécurité Physique &amp; Conformité RGPD : Verrouillage Automatique
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-defense-en-profondeur-verrouillage-du-pare-feu-windows-defender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-automatisation-industrielle-provisionnement-massif-via-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Automatisation Industrielle : Provisionnement Massif via PowerShell
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Automatisation Industrielle : Provisionnement Massif via PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonctionnalites-du-script-dingenierie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnalités du script d'ingénierie :
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controle-de-conformite-dans-lannuaire-active-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrôle de conformité dans l'annuaire Active Directory :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-deploiement-cible-de-ressources-reseau-gpo-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validation-en-session-utilisateur-sur-windows-11-enterprise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation en session utilisateur sur Windows 11 Enterprise :
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilan-operationnel-du-projet-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bilan Opérationnel du Projet 2 :
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -386,53 +696,63 @@
 
 
 
-  <h1>Lab 2 - Durcissement GPO & PowerShell</h1>
-
-<p># Lab 2 : Durcissement Active Directory (GPO ANSSI) \&amp; Automatisation PowerShell</p>
+<h1 id="lab-2-durcissement-active-directory-gpo-anssi-automatisation-powershell">Lab 2 : Durcissement Active Directory (GPO ANSSI) &amp; Automatisation PowerShell</h1>
 <blockquote>
-<p>**Objectif d'ingénierie :** Ce laboratoire documente la sécurisation avancée d'une infrastructure Active Directory sous Windows Server 2022 contre les attaques réseau courantes (Man-in-the-Middle, vol de hash NTLM), l'application de règles d'hygiène informatique (RGPD / Pare-feu), le provisionnement massif d'utilisateurs par script PowerShell et le déploiement ciblé de ressources partagées par GPO Preferences.</p>
+<p><strong>Objectif d'ingénierie :</strong> Ce laboratoire documente la sécurisation avancée d'une infrastructure Active Directory sous Windows Server 2022 contre les attaques réseau courantes (Man-in-the-Middle, vol de hash NTLM), l'application de règles d'hygiène informatique (RGPD / Pare-feu), le provisionnement massif d'utilisateurs par script PowerShell et le déploiement ciblé de ressources partagées par GPO Preferences.</p>
 </blockquote>
-<p>---</p>
-<p>## 1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)</p>
-<p>Par défaut, les systèmes Windows diffusent des requêtes en clair via le protocole LLMNR en cas d'échec de résolution DNS locale. Un attaquant présent sur le segment réseau peut écouter et empoisonner ces requêtes (via des outils tels que *Responder*) pour capturer des hashs NetNTLMv2.</p>
+<hr />
+<h2 id="1-durcissement-reseau-desactivation-du-protocole-llmnr-anti-poisoning">1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)</h2>
+<p>Par défaut, les systèmes Windows diffusent des requêtes en clair via le protocole LLMNR en cas d'échec de résolution DNS locale. Un attaquant présent sur le segment réseau peut écouter et empoisonner ces requêtes (via des outils tels que <em>Responder</em>) pour capturer des hashs NetNTLMv2.</p>
 <p>Une Stratégie de Groupe de niveau domaine a été créée pour éteindre ce protocole :</p>
-<p>![Configuration de la GPO Anti-LLMNR](../images/p2_screen1_creation_gpo.png)</p>
+<p><img alt="Configuration de la GPO Anti-LLMNR" src="../images/p2_screen1_creation_gpo.png" /></p>
 <p>Activation du paramètre système « Turn off multicast name resolution » :</p>
-<p>![Activation du paramètre d'extinction LLMNR](../images/p2_screen2_gpo_llmnr_enabled.png)</p>
-<p>### Validation dans la base de registre du client Windows 11 :</p>
+<p><img alt="Activation du paramètre d'extinction LLMNR" src="../images/p2_screen2_gpo_llmnr_enabled.png" /></p>
+<h3 id="validation-dans-la-base-de-registre-du-client-windows-11">Validation dans la base de registre du client Windows 11 :</h3>
 <p>Vérification par requête directe dans la ruche de registre système locale (<code>HKLM</code>) confirmant la prise en compte de la politique de sécurité avec la valeur <code>0</code> :</p>
-<p>![Preuve d'inactivation dans le Registre Windows](../images/p2_screen3_preuve_registre_llmnr.png)</p>
-<p>---</p>
-<p>## 2. Sécurité Physique \&amp; Conformité RGPD : Verrouillage Automatique</p>
+<p><img alt="Preuve d'inactivation dans le Registre Windows" src="../images/p2_screen3_preuve_registre_llmnr.png" /></p>
+<hr />
+<h2 id="2-securite-physique-conformite-rgpd-verrouillage-automatique">2. Sécurité Physique &amp; Conformité RGPD : Verrouillage Automatique</h2>
 <p>Afin de lutter contre les accès physiques non autorisés lors de l'abandon de poste, une politique d'ouverture de session interactive impose le verrouillage automatique de l'écran après 600 secondes (10 minutes) d'inactivité clavier/souris :</p>
-<p>![GPO de verrouillage de session à 10 minutes](../images/p2_screen4_gpo_session_lock.png)</p>
-<p>---</p>
-<p>## 3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender</p>
+<p><img alt="GPO de verrouillage de session à 10 minutes" src="../images/p2_screen4_gpo_session_lock.png" /></p>
+<hr />
+<h2 id="3-defense-en-profondeur-verrouillage-du-pare-feu-windows-defender">3. Défense en Profondeur : Verrouillage du Pare-Feu Windows Defender</h2>
 <p>Pour interdire toute neutralisation locale du pare-feu par des utilisateurs non avertis, une GPO centralisée force l'activation continue du pare-feu avec fonctions avancées de sécurité sur l'intégralité des profils (Domaine, Privé, Public) :</p>
-<p>![Pare-feu Windows Defender forcé sur tous les profils](../images/p2_screen5_gpo_firewall_on.png)</p>
-<p>---</p>
-<p>## 4. Automatisation Industrielle : Provisionnement Massif via PowerShell</p>
+<p><img alt="Pare-feu Windows Defender forcé sur tous les profils" src="../images/p2_screen5_gpo_firewall_on.png" /></p>
+<hr />
+<h2 id="4-automatisation-industrielle-provisionnement-massif-via-powershell">4. Automatisation Industrielle : Provisionnement Massif via PowerShell</h2>
 <p>Pour éliminer les tâches chronophages et les erreurs de saisie lors des arrivées massives de collaborateurs, un script PowerShell modulaire a été développé pour intégrer 30 employés à partir d'un fichier d'extraction RH (<code>utilisateurs.csv</code>).</p>
-<p>### Fonctionnalités du script d'ingénierie :</p>
-<p>* Parsing dynamique du fichier CSV.</p>
-<p>* Génération automatisée du login normalisé (<code>initiale-prenom + nom</code>).</p>
-<p>* Chiffrement en mémoire du mot de passe via objet sécurisé <code>.NET</code> (<code>ConvertTo-SecureString</code>).</p>
-<p>* Affectation dynamique dans l'Unité d'Organisation cible (<code>RH</code>, <code>Commercial</code>, <code>IT\_Admin</code>).</p>
-<p>* Forçage du renouvellement de mot de passe lors de la première connexion.</p>
-<p>![Exécution réussie du script d'import massif PowerShell](../images/p2_screen6_script_powershell_succes.png)</p>
-<p>### Contrôle de conformité dans l'annuaire Active Directory :</p>
+<h3 id="fonctionnalites-du-script-dingenierie">Fonctionnalités du script d'ingénierie :</h3>
+<ul>
+<li>
+<p>Parsing dynamique du fichier CSV.</p>
+</li>
+<li>
+<p>Génération automatisée du login normalisé (<code>initiale-prenom + nom</code>).</p>
+</li>
+<li>
+<p>Chiffrement en mémoire du mot de passe via objet sécurisé <code>.NET</code> (<code>ConvertTo-SecureString</code>).</p>
+</li>
+<li>
+<p>Affectation dynamique dans l'Unité d'Organisation cible (<code>RH</code>, <code>Commercial</code>, <code>IT_Admin</code>).</p>
+</li>
+<li>
+<p>Forçage du renouvellement de mot de passe lors de la première connexion.</p>
+</li>
+</ul>
+<p><img alt="Exécution réussie du script d'import massif PowerShell" src="../images/p2_screen6_script_powershell_succes.png" /></p>
+<h3 id="controle-de-conformite-dans-lannuaire-active-directory">Contrôle de conformité dans l'annuaire Active Directory :</h3>
 <p>Les comptes sont créés et compartimentés instantanément dans leurs services respectifs :</p>
-<p>![Comptes utilisateurs créés dans l'OU Commercial](../images/p2_screen7_ad_users_crees.png)</p>
-<p>---</p>
-<p>## 5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)</p>
-<p>Un partage sécurisé <code>\\\\SRV-DC01\\Partage\_RH</code> a été créé avec des droits d'accès restreints aux seuls membres du service RH (permissions de Modification, exclusion du Contrôle Total pour les utilisateurs standards).</p>
-<p>Grâce aux **Group Policy Preferences (GPP)**, le lecteur réseau <code>Z:</code> est monté automatiquement à l'ouverture de session des seuls collaborateurs de l'OU RH :</p>
-<p>![Configuration du Mappage de Lecteur Réseau Z](../images/p2_screen8_gpo_lecteur_z.png)</p>
-<p>### Validation en session utilisateur sur Windows 11 Enterprise :</p>
+<p><img alt="Comptes utilisateurs créés dans l'OU Commercial" src="../images/p2_screen7_ad_users_crees.png" /></p>
+<hr />
+<h2 id="5-deploiement-cible-de-ressources-reseau-gpo-preferences">5. Déploiement Ciblé de Ressources Réseau (GPO Preferences)</h2>
+<p>Un partage sécurisé <code>SRV-DC01Partage_RH</code> a été créé avec des droits d'accès restreints aux seuls membres du service RH (permissions de Modification, exclusion du Contrôle Total pour les utilisateurs standards).</p>
+<p>Grâce aux <strong>Group Policy Preferences (GPP)</strong>, le lecteur réseau <code>Z:</code> est monté automatiquement à l'ouverture de session des seuls collaborateurs de l'OU RH :</p>
+<p><img alt="Configuration du Mappage de Lecteur Réseau Z" src="../images/p2_screen8_gpo_lecteur_z.png" /></p>
+<h3 id="validation-en-session-utilisateur-sur-windows-11-enterprise">Validation en session utilisateur sur Windows 11 Enterprise :</h3>
 <p>Connexion avec le compte de domaine <code>adupont</code> (Alice Dupont) et constat de la présence du lecteur réseau partagé opérationnel :</p>
-<p>![Lecteur réseau Z monté sur le poste client Windows 11](../images/p2_screen9_lecteur_z_client.png)</p>
-<p>---</p>
-<p>### Bilan Opérationnel du Projet 2 :</p>
+<p><img alt="Lecteur réseau Z monté sur le poste client Windows 11" src="../images/p2_screen9_lecteur_z_client.png" /></p>
+<hr />
+<h3 id="bilan-operationnel-du-projet-2">Bilan Opérationnel du Projet 2 :</h3>
 <p>Ce laboratoire valide la transition vers l'administration d'infrastructure moderne : l'annuaire est durci contre les attaques réseau par rebond, l'administration est automatisée sans intervention manuelle et le déploiement des ressources est dynamique et cloisonné.</p>
 
 
