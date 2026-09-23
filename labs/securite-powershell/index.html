@@ -704,7 +704,7 @@
 <h2 id="1-durcissement-reseau-desactivation-du-protocole-llmnr-anti-poisoning">1. Durcissement Réseau : Désactivation du protocole LLMNR (Anti-Poisoning)</h2>
 <p>Par défaut, les systèmes Windows diffusent des requêtes en clair via le protocole LLMNR en cas d'échec de résolution DNS locale. Un attaquant présent sur le segment réseau peut écouter et empoisonner ces requêtes (via des outils tels que <em>Responder</em>) pour capturer des hashs NetNTLMv2.</p>
 <p>Une Stratégie de Groupe de niveau domaine a été créée pour éteindre ce protocole :</p>
-<p><img alt="Configuration de la GPO Anti-LLMNR" src="../images/p2_screen1_creation_gpo.png" /></p>
+<p><img alt="Configuration de la GPO Anti-LLMNR" src="../../images/p2_screen1_creation_gpo.png" /></p>
 <p>Activation du paramètre système « Turn off multicast name resolution » :</p>
 <p><img alt="Activation du paramètre d'extinction LLMNR" src="../../images/p2_screen2_gpo_llmnr_enabled.png" /></p>
 <h3 id="validation-dans-la-base-de-registre-du-client-windows-11">Validation dans la base de registre du client Windows 11 :</h3>
