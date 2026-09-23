@@ -632,9 +632,9 @@
 </tbody>
 </table>
 <p>Configuration validée en console système FreeBSD :</p>
-<p><img alt="Configuration des adresses IP en console pfSense" src="../images/p3_screen1_pfsense_console_ip.png" /></p>
+<p><img alt="Configuration des adresses IP en console pfSense" src="../../images/p3_screen1_pfsense_console_ip.png" /></p>
 <p>Supervision de l'état des interfaces sur le Dashboard pfSense :</p>
-<p><img alt="Dashboard officiel pfSense avec statuts d'interfaces" src="../images/p3_screen2_pfsense_dashboard.png" /></p>
+<p><img alt="Dashboard officiel pfSense avec statuts d'interfaces" src="../../images/p3_screen2_pfsense_dashboard.png" /></p>
 <hr />
 <h2 id="2-segmentation-logique-par-vlans-norme-ieee-8021q">2. Segmentation Logique par VLANs (Norme IEEE 802.1Q)</h2>
 <p>Pour isoler les serveurs critiques des machines clientes et prévenir les déplacements latéraux d'éventuels attaquants, des étiquettes VLAN (<em>Tags 802.1Q</em>) ont été définies sur l'interface parentale <code>em1</code> :</p>
@@ -642,9 +642,9 @@
 <li><strong>VLAN 10 :</strong> Zone dédiée aux contrôleurs de domaine et services centraux.</li>
 <li><strong>VLAN 20 :</strong> Zone réservée aux postes utilisateurs et terminaux nomades.</li>
 </ul>
-<p><img alt="Création et tagging des VLANs 10 et 20" src="../images/p3_screen3_vlans_crees.png" /></p>
+<p><img alt="Création et tagging des VLANs 10 et 20" src="../../images/p3_screen3_vlans_crees.png" /></p>
 <p>Assignation définitive des interfaces virtuelles routables :</p>
-<p><img alt="Tableau d'assignation des interfaces WAN, SERVEURS et USERS" src="../images/p3_screen4_interfaces_assignees.png" /></p>
+<p><img alt="Tableau d'assignation des interfaces WAN, SERVEURS et USERS" src="../../images/p3_screen4_interfaces_assignees.png" /></p>
 <hr />
 <h2 id="3-matrice-de-filtrage-pare-feu-politique-zero-trust">3. Matrice de Filtrage Pare-Feu (Politique Zero Trust)</h2>
 <p>Par défaut, tout trafic non explicitement autorisé est rejeté (<em>Implicit Deny</em>). Une matrice de filtrage d'entreprise a été implémentée sur les interfaces internes :</p>
@@ -653,11 +653,11 @@
 <li><strong>Flux d'Authentification Active Directory :</strong> Autorisation du protocole <strong>Kerberos (Port 88)</strong> et <strong>LDAP (Port 389)</strong>.</li>
 <li><strong>Flux Web :</strong> Autorisation des protocoles <strong>HTTP (80)</strong> et <strong>HTTPS (443)</strong> vers la passerelle WAN.</li>
 </ol>
-<p><img alt="Matrice des règles de sécurité de filtrage" src="../images/p3_screen5_regles_firewall_users.png" /></p>
+<p><img alt="Matrice des règles de sécurité de filtrage" src="../../images/p3_screen5_regles_firewall_users.png" /></p>
 <hr />
 <h2 id="4-audit-analyse-des-journaux-de-blocage-system-logs">4. Audit &amp; Analyse des Journaux de Blocage (System Logs)</h2>
 <p>Le moteur de filtrage à états (<em>Stateful Packet Inspection</em>) inspecte chaque en-tête de paquet IP. Les tentatives de scan de ports non sollicitées et les paquets non conformes sont immédiatement neutralisés et consignés dans les journaux de sécurité en temps réel :</p>
-<p><img alt="Journaux de filtrage pfSense affichant les rejets de paquets" src="../images/p3_screen6_logs_firewall_bloques.png" /></p>
+<p><img alt="Journaux de filtrage pfSense affichant les rejets de paquets" src="../../images/p3_screen6_logs_firewall_bloques.png" /></p>
 <hr />
 <h3 id="bilan-operationnel-du-projet-3">Bilan Opérationnel du Projet 3 :</h3>
 <p>Ce déploiement valide la capacité à architecturer un réseau d'entreprise compartimenté : la passerelle pfSense garantit la rupture protocolaire, les flux inter-VLANs sont régulés par des règles d'inspection d'état strictes et la traçabilité des accès est assurée par l'audit continu des journaux de sécurité.</p>
