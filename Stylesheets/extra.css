@@ -1,0 +1,77 @@
+/* Palette : fond bleu encre, un seul accent bleu clair.
+   Vert et ambre servent uniquement aux badges de statut. */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #16202c;
+  --md-primary-fg-color--light: #243244;
+  --md-primary-fg-color--dark: #0f151d;
+  --md-primary-bg-color: #dbe3ec;
+  --md-primary-bg-color--light: #a9b6c4;
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: #5eb0ef;
+  --md-accent-fg-color--transparent: #5eb0ef1a;
+  --md-accent-bg-color: #0f151d;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0f151d;
+  --md-default-fg-color: #dbe3ec;
+  --md-default-fg-color--light: #a9b6c4;
+  --md-default-fg-color--lighter: #6c7b8c;
+  --md-default-fg-color--lightest: #26323f;
+  --md-code-bg-color: #161e29;
+  --md-typeset-a-color: #5eb0ef;
+}
+
+/* Mode clair : l'accent bleu clair manque de contraste sur blanc */
+[data-md-color-scheme="default"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #1f6fb2;
+  --md-accent-fg-color--transparent: #1f6fb21a;
+}
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #1f6fb2;
+}
+
+/* Lecture : colonne plus étroite, interligne confortable */
+.md-grid { max-width: 58rem; }
+.md-typeset { font-size: .8rem; line-height: 1.7; }
+.md-typeset h1 { font-weight: 700; letter-spacing: -.02em; }
+.md-typeset table:not([class]) { font-size: .72rem; }
+
+/* Captures d'écran : un cadre fin pour les détacher du fond */
+.md-typeset img {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+}
+
+/* Boutons de l'accueil */
+.md-typeset .md-button { margin: 0 .4rem .4rem 0; }
+
+/* Bandeau d'accueil : aligné à gauche */
+.hero { padding: 1.5rem 0 1rem; }
+.hero h1 { font-size: 2.2rem; margin: 0 0 .4rem; }
+.hero .poste {
+  font-size: 1.05rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1rem;
+}
+.hero .statut {
+  font-family: var(--md-code-font-family);
+  font-size: .75rem;
+  color: var(--md-accent-fg-color);
+  margin: 0 0 1.2rem;
+}
+.hero .statut::before { content: "> "; }
+
+/* Badges de statut des labs */
+.badge {
+  display: inline-block;
+  padding: 0 .55em;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: .65rem;
+  vertical-align: middle;
+}
+.badge.ok  { color: #4fb286; }
+.badge.wip { color: #e0a63a; }
